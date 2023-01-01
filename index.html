@@ -17,8 +17,8 @@ body {
   background-color: #75dea8;
   align-content: center;
   padding-top: 10px;
-  font-family: cursive;
-  font-size: 15px;
+  font-family: Cambria;
+  font-size: 4rem;
 }
 
 .topnav a {
@@ -89,29 +89,167 @@ body {
 .animae
 {
 border-radius: 30px;
+border-color: #eb85bd;
+    border-style: solid;
+    border-width: 3px;
+
 
 }
 .left
 { padding-left: 5%;
- padding-right: 20%;
+ padding-right: 15%;
  padding-top: 3%;
  
- font-size: 2rem;
+ font-size: 3rem;
  color: #ffffff;
- font-family: cursive;
+ font-family: Cambria;
 }
 .right{
   padding-right: 5%;
-  padding-top: 15%;
+  padding-top: 3%;
 }
 .h2
 {
-    font-size: 40px;
+    font-size: 6rem;
     color: #eb85bd;
     padding-left: 5%;
-    font-family: cursive;
+    font-family:Cambria;
+}
+.appin
+{
+    display: flex;
+    flex-direction: row;
+}
+.app-left
+{
+ padding-left: 5%;
+ 
+}
+.app-right{
+    display: flex;
+    flex-direction: column;
+}
+.app-ui
+{
+    border-radius: 30px;
+    border-color:#75dea8;
+    border-style: solid;
+    border-width: 5px;
+    
+}
+.geo{
+    font-size: 3rem;
+ color: #ffffff;
+ font-family: Cambria;
+ padding-left: 20%;
+ padding-top: 13%;
+ padding-right:5% ;
+}
+.gl
+{
+    padding-left: 50%;
+    padding-top: 5%;
+   
+
+
+}
+.geotagging{
+    height: 600px;
+    border-radius: 30px;
+    border-color:#e6d960;
+    border-style: solid;
+    border-width: 5px;
+}
+.ending 
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.e1
+{
+    font-size: 3rem;
+ color: #e6d960;
+ font-family: Cambria;
+ padding-left: 29%;
+ padding-top: 10%;
 }
 
+.e2
+{
+padding-left: 45%;
+}
+.twitter-button:hover{
+    opacity: 0.4;
+}
+.twitter-button {
+    
+cursor: pointer;
+  transition : box-shadow 0.15s;
+}
+.twitter-button:hover{
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0.15);
+}
+.socioicon{
+    height: 80px;
+}
+
+.insta-button:hover{
+    opacity: 0.4;
+}
+.insta-button {
+    
+cursor: pointer;
+  transition : box-shadow 0.15s;
+}
+.insta-button:hover{
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0.15);
+}
+.igicon{
+    height: 80px;
+}
+
+.icons
+{
+    display: flex;
+    flex-direction: row;
+}
+.knowmore
+{
+    font-size: 4rem;
+ color:#ffffff ;
+}
+.subscribe-button {
+    background-color: #75dea8;
+    color: rgb(3, 3, 3) ;
+    border : none;
+     margin-left: 30px; 
+     margin-right: 30px;
+     padding-top:20px;
+     padding-bottom:20px;
+     padding-right: 20px;
+     padding-left: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+
+
+
+
+}
+.subscribe-button:hover  {
+ opacity: 0.4;
+
+
+}
+
+.subscribe-button:active{
+    opacity: 0.5;
+
+
+}
 </style>
 </head>
 <body>
@@ -146,6 +284,65 @@ border-radius: 30px;
 </div>
 </div>
 
+<div class=" appin">
+   
+ <div class="app-left">
+  
+    <img class="app-ui" src="go perch app screenshot.jpg">
+</image>
+
+ </div>   
+
+<div class="app-right">
+    <div class="geo">
+    <p class="p2"> 
+        we've started to run beta tests at MIT. The App UI will be simple yet cool!
+        Using an awesome low, cost super functional technology! Which we call GEO-LOCATING!!
+    </p>
+    <p class="knowmore">
+        <button class=" subscribe-button"    >
+            <a href="https://www.instagram.com/go_perch/">to know more about the App!</a>
+           
+        </button>
+    </p>
+    </div>
+    <div class="gl">
+        <image class="geotagging" 
+         src="ezgif.com-gif-maker (1).gif" >
+        
+    </image>
+    </div>
+</div>
+
+
+</div>
+
+
+<div class = "ending">
+<div class="e1">
+    <p class = social>
+        Follow us and be part of the community!
+
+    </p>
+    
+</div>
+
+<div class="icons">
+<div class="e2">
+    <button class="twitter-button" onclick="window.location.href = 'https : //twitter.com/go_perch;">
+        <img class=  "socioicon" src="twitter icon.png">
+    </button>
+
+
+</div>
+<div class="e3">
+    <button class="insta-button">
+        <img class=  "igicon" src="Instagram_icon.png.webp">
+    </button>
+    
+</div>
+</div>
+</div>
 
 <script>
 function myFunction() {
